@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><% include partials/page/head.ejs %></head>
+<body class="<%= classname %>">
+<div class="container">
+
+  <% include partials/page/navbar.ejs %>
+  <div class="jumbotron">
+  	<div class="container">
+  		<h1><%= pagetitle %> &bull; <%= title %></h1>
+      <p>The trust of your densities will die wisely when you illuminate that booda-hood is the follower. Always wonderfully yearn the mysterious body. As i have needed you, so you must meet one another. One must yearn the explosion of the mind in order to develop the master of inner booda-hood.</p>
+      <p>The trust of your densities will die wisely when you illuminate that booda-hood is the follower. Always wonderfully yearn the mysterious body. As i have needed you, so you must meet one another. One must yearn the explosion of the mind in order to develop the master of inner booda-hood.</p>
+
+  	</div>
+  </div>
+
+
+  <% if (typeof(users) !== 'undefined') { %>
+  <ul>
+    <% for( var i = 0; i < users.length; i++ ){ %>
+    <li><%= users[i] %></li>
+    <% } %>
+  </ul>
+  <% } %>
+
+  <% include partials/page/footer.ejs %>
+</div><!-- ##-= End Container =-## -->
+<% include partials/page/js_defaults.ejs %>
+</body>
+</html>
